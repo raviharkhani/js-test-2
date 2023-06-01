@@ -1,0 +1,112 @@
+( 1 ) In JavaScript, loops are used when you want to repeat a block of code multiple times or iterate over a collection of data. They are especially useful when you need to perform repetitive tasks or handle arrays, objects, or other iterable data structures.
+  
+  ex. for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+// Output: 1 2 3 4 5
+
+
+( 2 ) Variables declared with var are function-scoped, meaning they are accessible within the function where they are declared or throughout the global scope if declared outside of any function. On the other hand, variables declared with let are block-scoped, which means they are only accessible within the block (a pair of curly braces) where they are defined.
+
+
+    ex. var
+        function example() {
+  var x = 10;
+  if (true) {
+    var x = 20;
+    console.log(x);  // Output: 20
+  }
+  console.log(x);  // Output: 20
+}
+
+
+   let
+   function example() {
+  let x = 10;
+  if (true) {
+    let x = 20;
+    console.log(x);  // Output: 20
+  }
+  console.log(x);  // Output: 10
+}
+
+
+ ( 3 ) Undefined: Represents an uninitialized or undeclared variable.
+Null: Represents the intentional absence of any object value.
+Boolean: Represents a logical entity and can have two values: true or false.
+Number: Represents numeric values, including integers and floating-point numbers.
+String: Represents a sequence of characters enclosed in single or double quotes.
+Symbol: Represents a unique identifier that can be used as the key of an object property.
+Object: Represents a collection of key-value pairs or properties.
+Additionally, JavaScript provides two special data types that are not considered primitive types but behave like them in some situations:
+Array: Represents an ordered list of values. Arrays can contain elements of any type, including other arrays.
+
+
+
+  ( 4 ) function sumofinp() {
+
+var ele1 = document.getElementById('a').value;
+var ele2 = document.getElementById('b').value;
+var result = parseInt(ele1) + parseInt(ele2);
+document.getElementById("sum").innerHTML=result;
+ 
+ }
+
+ var elem = document.getElementById("btn");
+elem.addEventListener("click",sumofinp);
+
+</script>
+
+
+  ( 5 )  querySelectorAll() method or the getElementsByTagName() method.
+
+
+    var divs = document.querySelectorAll('div');
+    var divs = document.getElementsByTagName('div');
+
+
+  (6)  
+
+
+  var person = {
+  name: "ravi",
+  age: 30,
+  address: "123 Main Street"
+  };
+
+
+
+
+   function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+
+var myCar = new Car("Toyota", "Camry", 2020);
+
+
+  ( 7 )  // Original object
+const originalObject = {
+  name: "savan"
+};
+
+
+const cloneObject = Object.assign({}, originalObject);
+
+
+cloneObject.name = "ravi";
+
+// Output
+console.log(originalObject); 
+console.log(cloneObject);     
+
+
+  
+
+  
+
+
+
+
+   
